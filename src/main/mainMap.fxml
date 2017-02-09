@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <HBox maxHeight="30.0" maxWidth="1191.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #5b84ff;" StackPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="about" maxHeight="30.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #5b84ff;" text="About">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="credits" maxHeight="30.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #5b84ff;" text="Credits">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="help" maxHeight="30.0" maxWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #5b84ff;" text="Help">
+               <HBox.margin>
+                  <Insets left="2.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fx:id="view2" fitHeight="670.0" fitWidth="1191.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <StackPane.margin>
+            <Insets top="30.0" />
+         </StackPane.margin>
+         <image>
+            <Image url="@../graphics/gate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="view1" fitHeight="700.0" fitWidth="1191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../graphics/v2.png" />
+         </image>
+         <StackPane.margin>
+            <Insets top="30.0" />
+         </StackPane.margin>
+      </ImageView>
+      <Button fx:id="back" disable="true" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #808027;" text="Back" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="20.0" top="50.0" />
+         </StackPane.margin>
+      </Button>
+      <Circle fx:id="gateBorder" disable="true" fill="WHITE" opacity="0.0" radius="136.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: MULTIPLY; -fx-cursor: HAND;" translateX="230.0">
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </Circle>
+      <Circle fx:id="capitalBorder" fill="WHITE" opacity="0.0" radius="123.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: MULTIPLY; -fx-cursor: HAND;" />
+      <Circle fx:id="churchBorder" fill="WHITE" opacity="0.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: MULTIPLY; -fx-cursor: HAND;" translateX="-125.0" translateY="-70.0" StackPane.alignment="BOTTOM_CENTER" />
+      <Circle fx:id="schoolBorder" fill="WHITE" opacity="0.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: MULTIPLY; -fx-cursor: HAND;" translateX="-175.0" translateY="41.0" StackPane.alignment="TOP_RIGHT" />
+      <Circle fx:id="farmBorder" fill="WHITE" opacity="0.0" radius="58.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: MULTIPLY; -fx-cursor: HAND;" translateX="-215.0" translateY="-125.0" />
+      <Pane fx:id="pane" maxHeight="184.0" maxWidth="266.0" opacity="0.71" prefHeight="184.0" prefWidth="266.0" style="-fx-background-color: white; -fx-border-color: gray; -fx-border-width: 5px;" StackPane.alignment="BOTTOM_LEFT">
+         <children>
+            <Label fx:id="text" alignment="TOP_LEFT" contentDisplay="TOP" maxHeight="184.0" maxWidth="266.0" prefHeight="191.0" prefWidth="316.0" textAlignment="JUSTIFY">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="20.0" left="20.0" />
+         </StackPane.margin>
+      </Pane>
+      <Label fx:id="capitalLabel" opacity="0.79" style="-fx-background-color: white;" text="The Capital" translateX="80.0" translateY="-70.0" visible="false" />
+      <Label fx:id="farmLabel" opacity="0.79" style="-fx-background-color: white;" text="The Farm" translateX="420.0" translateY="170.0" visible="false" StackPane.alignment="TOP_LEFT" />
+      <Label fx:id="churchLabel" opacity="0.79" style="-fx-background-color: white;" text="The Church" translateX="-50.0" translateY="-180.0" visible="false" StackPane.alignment="BOTTOM_CENTER" />
+      <Label fx:id="schoolLabel" opacity="0.79" style="-fx-background-color: white;" text="The School" translateX="-120.0" translateY="50.0" visible="false" StackPane.alignment="TOP_RIGHT" />
+   </children>
+</StackPane>
